@@ -6,7 +6,5 @@ class User < ApplicationRecord
 
   has_many :articles
 
-
-
   enum :role, { reader: 0, author: 1, editor: 2 }
 end
