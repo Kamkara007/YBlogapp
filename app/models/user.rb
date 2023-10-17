@@ -5,5 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :articles
+
+
+
   enum :role, { reader: 0, author: 1, editor: 2 }
 end
